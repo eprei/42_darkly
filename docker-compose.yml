@@ -7,8 +7,6 @@ services:
     container_name: my-kali-container
     tty: true
     stdin_open: true
-    volumes:
-      - ./shared:/shared
     networks:
       - kali-network
 

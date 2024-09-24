@@ -22,9 +22,6 @@ then
     exit 1
 fi
 
-echo_color "Creating shared directory..." "$GREEN"
-mkdir -p shared
-
 if [[ "$(docker images -q my-kali-linux 2> /dev/null)" == "" ]]; then
     echo_color "Kali Linux image not found. Building..." "$GREEN"
     docker compose build
