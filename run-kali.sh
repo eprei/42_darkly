@@ -25,18 +25,20 @@ fi
 echo_color "Creating shared directory..." "$GREEN"
 mkdir -p shared
 
-echo_color "Building Kali Linux image..." "$GREEN"
-docker compose build
+if [[ "$(docker images -q my-kali-linux 2> /dev/null)" == "" ]]; then
+    echo_color "Kali Linux image not found. Building..." "$GREEN"
+    docker compose build
+else
+    echo_color "Kali Linux image already exists. Skipping build." "$GREEN"
+fi
 
 echo_color "Starting Kali Linux container..." "$GREEN"
 docker compose up -d
 
-# Check if the container is running
-if [ "$(docker-compose ps -q kali)" ]; then
+if [ "$(docker compose ps -q kali)" ]; then
     echo_color "Kali Linux container is up and running." "$GREEN"
     echo_color "Connecting to the container..." "$GREEN"
     
-    # Connect to the container
     docker compose exec kali bash
 else
     echo_color "Failed to start Kali Linux container. Please check your Docker Compose configuration." "$YELLOW"
