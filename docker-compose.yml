@@ -1,0 +1,17 @@
+services:
+  kali:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-kali-linux
+    container_name: my-kali-container
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./shared:/shared
+    networks:
+      - kali-network
+
+networks:
+  kali-network:
+    driver: bridge
