@@ -22,6 +22,7 @@ Vagrant.configure("2") do |config|
           "#{File.expand_path(".", Dir.pwd)}/Darkly_i386.iso"]
           # Boot from iso image mounted
           vb.customize ["modifyvm", :id, "--boot1", "dvd"]
+          # vb.customize ["modifyvm", :id, "--nested-hw-virt", "on"]
         end
     end
 end
