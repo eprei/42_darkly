@@ -18,3 +18,7 @@ It is not a security feature and should not be used to hide sensitive or private
 
 Do not list sensitive directories (e.g., admin panels, user data, configuration files) in robots.txt. Although this can prevent indexing, it publicly advertises these directories, making them easy for attackers to find.
 Instead, sensitive content should be protected using proper authentication and authorization mechanisms or by placing them outside of the web root.
+
+## Resources
+
+[PortSwigger information-disclosure](https://portswigger.net/web-security/information-disclosure)
