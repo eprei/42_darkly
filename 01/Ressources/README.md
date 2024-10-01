@@ -11,3 +11,7 @@ Sending a value higher than 10 is triggering the flag to be shown.
 
 All data coming from the frontend should be treated as untrusted because it can potentially be manipulated by users.
 For proper security, you should always validate and sanitize inputs on the backend, regardless of whether the same validation is performed on the frontend.
+
+## Resources
+
+[Input Validation OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html#implementing-input-validation)
