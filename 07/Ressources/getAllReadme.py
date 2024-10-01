@@ -16,7 +16,6 @@ def get_all_readme(base_url, current_url, visited, output_file):
         if current_url.endswith('README'):
             print(f"Found README at: {current_url}")
             with open(output_file, 'a', encoding='utf-8') as f:
-                f.write(f"\n\n--- README from {current_url} ---\n\n")
                 f.write(response.text)
         else:
             for link in soup.find_all('a'):
