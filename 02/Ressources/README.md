@@ -10,5 +10,6 @@ So we add:<br> User-Agent: ft_bornToSec <br>Referer: https://www.nsa.gov/<br> to
 | grep 'The flag is'`
 
 ## Patch
+
 Leaving sensitive information in the code comments is a security risk.
 It’s considered a best practice to avoid leaving such comments in production environments. Make sure to remove or sanitize any comments that might expose internal workings or security details of your application.

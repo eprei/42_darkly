@@ -15,3 +15,7 @@ There are many techniques to mitigate the risk of brute force attacks:
 - Use of Captcha
 - Two-Factor Authentication
 - Password Complexity Requirements
+
+## Resources
+
+[OWASP](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/04-Authentication_Testing/07-Testing_for_Weak_Password_Policy)
