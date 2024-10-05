@@ -1,11 +1,12 @@
+# User Data Validation
+
 ## Exploit
 
-On the page "/index.php?page=survey#" we can select a grade between 1 and 10 for a subject. <br>
-But the backend doesn't check that the value is between 1 and 10.<br>
+On the page "/index.php?page=survey#" we can select a grade between 1 and 10 for a subject.\
+But the backend doesn't check that the value is between 1 and 10.\
 Sending a value higher than 10 is triggering the flag to be shown.
 
 `curl 'http://172.20.10.3/index.php?page=survey#' --data 'sujet=2&valeur=11' | grep 'The flag is'`
-
 
 ## Patch
 

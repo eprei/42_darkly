@@ -1,12 +1,13 @@
+# Stored XSS
+
 ## Exploit
 
-On the login page: "/?page=feedback", when the user fill up the feedback form,<br>
-there is a function validate_form() that is called.<br>
+On the login page: "/?page=feedback", when the user fill up the feedback form,\
+there is a function validate_form() that is called.\
 But it only checks that fields are not empty and don't do any sanitization even thought the message is directly added to the frontend.
-We can do a HTML injection:<br>
-`name: toto, message: <scr<script>ipt>alert('XSS')</scr<script>ipt>`<br>
+We can do a HTML injection:\
+`name: toto, message: <scr<script>ipt>alert('XSS')</scr<script>ipt>`\
 This will trigger the flag.
-
 
 ## Patch
 

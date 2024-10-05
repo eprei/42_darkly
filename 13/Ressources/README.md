@@ -6,7 +6,6 @@ The parameter called ‘mail’ allows you to choose where the password recovery
 
 The parameter named ‘mail’ located in the body of the password recovery request allows you to choose where to send the password recovery mail to.
 
-
 ## Patch
 
 ## Resources
