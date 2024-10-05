@@ -1,3 +1,5 @@
+# Directory Traversal
+
 ## Exploit
 
 We can see that most page are fetch with the query "?page=".\

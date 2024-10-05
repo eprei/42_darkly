@@ -1,3 +1,5 @@
+# Information disclosure
+
 ## Exploit
 
 go to <http://xxx.xx.xx.x/robots.txt>\

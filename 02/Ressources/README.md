@@ -1,3 +1,5 @@
+# Sensitive info in comments
+
 ## Exploit
 
 On the page \
@@ -8,7 +10,7 @@ On the page \
 
 So we add: \
 User-Agent: ft_bornToSec \
-Referer: https://www.nsa.gov/ \
+Referer: <https://www.nsa.gov/> \
 to the request Headers and we get the flag.
 
 `curl -H "User-Agent: ft_bornToSec" -H "Referer: https://www.nsa.gov/" "http://172.20.10.3/index.php?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c88e13b758f"

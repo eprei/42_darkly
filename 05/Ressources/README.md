@@ -1,3 +1,5 @@
+# Stored XSS
+
 ## Exploit
 
 On the login page: "/?page=feedback", when the user fill up the feedback form,\
