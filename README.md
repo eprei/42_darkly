@@ -1,38 +1,53 @@
 # Darkly
 
-## Web Security Audit Project
+An educational web security audit project focused on discovering and understanding common web vulnerabilities.
 
-This project is an introduction to web application security, focusing on identifying and exploiting common vulnerabilities.
+## 🚨 Disclaimer
 
-### Project Overview
+This project is part of the cybersecurity curriculum at 42 School. The code and documentation provided are for **educational purposes only**. The vulnerabilities discussed should never be exploited on systems without explicit authorization.
 
-Audit a simple website for security vulnerabilities, learning about the OWASP Top 10 and common web application risks.
+## 🎯 Project Overview
 
-### Objectives
+The goal of this project is to perform a security audit on a deliberately vulnerable website, identifying and documenting various security breaches. The project helps understand common web vulnerabilities, their exploitation, and most importantly, how to prevent them.
 
-- Discover and exploit 14 different security breaches
-- Understand the underlying causes of these vulnerabilities
-- Learn how to fix and prevent these security issues
+## 🔍 Key Features
 
-### Requirements
+- Complete coverage of various web security vulnerabilities
+- Documentation of discovery, exploitation, and mitigation strategies
+- Resource gathering and methodology documentation
+- Custom scripts and tools for security testing
 
-- Use of a virtual machine (i386)
-- Web browser for accessing the vulnerable website
+## 🛠️ Prerequisites
 
-### Getting Started
+- Virtual Machine (i386)
+- Basic understanding of web technologies
+- Knowledge of common web security concepts
 
-1. Boot up the provided ISO in a virtual machine
-2. Access the website using the IP address provided at the prompt
-3. Explore the website and identify vulnerabilities
+## 📋 Project Structure
 
-### Deliverables
+```
+└── [Vulnerability Category]/
+    ├── flag
+    └── Resources/
+        ├── README.md
+        └── [Additional Resources]
+```
 
-For each identified vulnerability:
+Each vulnerability is documented in its own directory, containing:
+- A detailed explanation of the vulnerability
+- Steps to reproduce
+- Mitigation strategies
+- Resources for further learning
 
-1. Create a folder named after the breach
-2. Include a `flag` file with the validation flag
-3. Include a `Ressources` folder with all files needed to reproduce the exploit
+## ⚠️ Important Note
 
-### Note
+This repository contains solutions to a school project. If you're a 42 student, I encourage you to solve the challenges yourself first. The learning experience is much more valuable than simply looking at solutions.
 
-This project is for educational purposes only. Always obtain proper authorization before testing for vulnerabilities on any system you do not own or have explicit permission to test.
+## 📚 Resources
+
+- [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+- [Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
+
+## 📝 License
+
+This project is for educational purposes only. Use the knowledge responsibly and ethically.
